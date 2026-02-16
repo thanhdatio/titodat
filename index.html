@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard Tito & Đạt - Quản lý Mục tiêu & Công việc</title>
+    <meta name="description" content="Dashboard quản lý mục tiêu và các công việc đang thực hiện giữa Chu Thành Đạt và trợ lý AI Tito.">
+    <link rel="icon" href="https://tito.thanhdat.io/favicon.ico" type="image/x-icon"> {# Using Tito's favicon for now #}
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+<body>
+    <div class="particles" id="particles"></div>
+
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="#" class="nav-logo">
+                <span class="logo-icon">📊</span>
+                <span class="logo-text">Dashboard Tito & Đạt</span>
+            </a>
+            <ul class="nav-menu">
+                <li><a href="#goals" class="nav-link active">Mục tiêu</a></li>
+                <li><a href="#tasks" class="nav-link">Công việc</a></li>
+            </ul>
+            <button class="nav-toggle" id="navToggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="hero" class="hero">
+            <div class="container">
+                <h1 class="hero-title">Dashboard Tổng quan</h1>
+                <p class="hero-subtitle">Nơi theo dõi các mục tiêu, công việc và tiến độ hợp tác giữa Đạt và Tito AI.</p>
+                <div class="stats-grid">
+                    <div class="stat-card">
+                        <h3>Mục tiêu chính</h3>
+                        <p class="stat-value">3</p>
+                    </div>
+                    <div class="stat-card">
+                        <h3>Công việc đang làm</h3>
+                        <p class="stat-value">5</p>
+                    </div>
+                    <div class="stat-card">
+                        <h3>Công việc hoàn thành</h3>
+                        <p class="stat-value">8</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Goals Section -->
+        <section id="goals" class="section goals-section">
+            <div class="container">
+                <h2 class="section-title">Mục tiêu chiến lược</h2>
+                <p class="section-subtitle">Các mục tiêu lớn chúng ta đang hướng tới.</p>
+                <div class="goals-grid">
+                    <div class="goal-card">
+                        <h3>Phát triển Thương hiệu cá nhân về AI</h3>
+                        <p>Xây dựng hình ảnh Chu Thành Đạt là một người có chuyên môn về AI & Tự động hóa thông qua các kênh online.</p>
+                        <span class="goal-status status-in-progress">Đang triển khai</span>
+                    </div>
+                    <div class="goal-card">
+                        <h3>Tạo Dòng thu nhập thụ động từ AI</h3>
+                        <p>Xây dựng các sản phẩm, dịch vụ hoặc nội dung có khả năng tạo ra thu nhập tự động/bán tự động từ các giải pháp AI.</p>
+                        <span class="goal-status status-todo">Chưa triển khai</span>
+                    </div>
+                    <div class="goal-card">
+                        <h3>Nâng cấp Khả năng của Tito AI</h3>
+                        <p>Liên tục cải thiện Tito AI, từ khả năng giao tiếp, công cụ sử dụng đến hiệu suất hoạt động, phục vụ tốt hơn cho Đạt.</p>
+                        <span class="goal-status status-in-progress">Đang triển khai</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Tasks Section -->
+        <section id="tasks" class="section tasks-section">
+            <div class="container">
+                <h2 class="section-title">Danh sách công việc</h2>
+                <p class="section-subtitle">Các công việc chi tiết đang thực hiện và cần làm.</p>
+                <div class="tasks-table">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Công việc</th>
+                                <th>Danh mục</th>
+                                <th>Ưu tiên</th>
+                                <th>Trạng thái</th>
+                                <th>Ghi chú</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Thiết kế lại website cá nhân (thanhdat.io)</td>
+                                <td>Website</td>
+                                <td class="priority-high">Cao</td>
+                                <td class="status-done">Đã xong</td>
+                                <td>Giao diện mới, nhấn mạnh chuyên môn AI</td>
+                            </tr>
+                            <tr>
+                                <td>Chuyển blog sang Jekyll (blog.thanhdat.io)</td>
+                                <td>Blog</td>
+                                <td class="priority-high">Cao</td>
+                                <td class="status-done">Đã xong</td>
+                                <td>Cấu trúc mới, Markdown, hiệu suất cao</td>
+                            </tr>
+                            <tr>
+                                <td>Viết lại 3 bài blog demo chất lượng cao</td>
+                                <td>Blog</td>
+                                <td class="priority-high">Cao</td>
+                                <td class="status-done">Đã xong</td>
+                                <td>Đã tích hợp "Ma trận Cộng sinh Người - Máy"</td>
+                            </tr>
+                            <tr>
+                                <td>Xử lý lỗi kết nối mạng (Switch 192.168.0.151)</td>
+                                <td>Hạ tầng mạng</td>
+                                <td class="priority-urgent">Khẩn cấp</td>
+                                <td class="status-blocked">Bị chặn</td>
+                                <td>Switch không ổn định, không lưu cấu hình. Cần thay thế.</td>
+                            </tr>
+                            <tr>
+                                <td>Tạo dashboard quản lý công việc (Dashboard này)</td>
+                                <td>Quản lý dự án</td>
+                                <td class="priority-high">Cao</td>
+                                <td class="status-in-progress">Đang làm</td>
+                                <td>Đang xây dựng giao diện và tích hợp dữ liệu</td>
+                            </tr>
+                            <tr>
+                                <td>Cấu hình GitHub Pages cho blog mới (blog.thanhdat.io)</td>
+                                <td>Blog</td>
+                                <td class="priority-medium">Trung bình</td>
+                                <td class="status-todo">Cần làm</td>
+                                <td>Người dùng cần kiểm tra và xác nhận cấu hình.</td>
+                            </tr>
+                            <tr>
+                                <td>Cấu hình GitHub Pages cho website cá nhân (thanhdat.io)</td>
+                                <td>Website</td>
+                                <td class="priority-medium">Trung bình</td>
+                                <td class="status-todo">Cần làm</td>
+                                <td>Người dùng cần trỏ domain về repo mới.</td>
+                            </tr>
+                            <tr>
+                                <td>Viết bài blog tiếp theo (theo kế hoạch nội dung)</td>
+                                <td>Blog</td>
+                                <td class="priority-low">Thấp</td>
+                                <td class="status-todo">Cần làm</td>
+                                <td>Đang chờ blog hoạt động ổn định</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container text-center">
+            <p>&copy; 2026 Dashboard Tito & Đạt. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Ionicon -->
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <!-- Custom JS -->
+    <script src="./assets/js/script.js"></script>
+</body>
+</html>
